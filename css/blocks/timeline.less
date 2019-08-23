@@ -1,0 +1,91 @@
+// main: ../style.less
+
+.timeline{
+    position: relative;
+    display: flex;
+
+    margin: 4.2rem auto;
+
+    width: 100%;
+    max-width: 768px;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        
+        background-color: @black;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+.timeline_item{
+    margin-bottom: 2rem;
+}
+.timeline_col{
+    width: 50%;
+
+    &--left{
+        text-align: right;
+        padding-right: 3.2rem;
+    
+    }
+
+    &--right{
+        text-align: left;
+        padding-left: 3.2rem;
+    }
+
+}
+
+.timeline_title{
+    font-size: 1.2rem;
+    color:@black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 2.6rem;
+}
+.timeline_date{
+    font-size: .94rem;
+    color: @black;
+    text-decoration: underline;
+
+    margin-bottom: 0.94rem;
+    margin-top: 2.2rem;
+}
+
+.timeline_subtitle{
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: @black;
+}
+.timeline_position{
+    font-size: 1.06rem;
+    font-style: italic;
+    color: @black;
+
+    margin-bottom: 0.6rem;
+}
+
+.timeline_text{
+    color: @gray;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.timeline_Skills{
+    font-size: 1.2rem;
+    color:@black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
+    margin-top: 2.6rem;
+}

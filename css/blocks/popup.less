@@ -1,6 +1,7 @@
 // main: ../style.less
 
 .popup{
+    
     display: flex;
 
     padding: 2rem;
@@ -19,7 +20,7 @@
 }
 
 .popup_dialog{
-
+    
     padding: 1rem;
     width: 100%;
     max-width: 1200px;
@@ -72,16 +73,44 @@
     background: none;
     border: 0;
     outline: none;
+    cursor: pointer;
 
     font-family: inherit;
     font-size: 0.94rem;
     color:@black;
     text-transform: uppercase;
+
+
    
+&--prev{
+    transition: transform .2s linear;
 
-    &--previous{
-       
+    &:hover{
+        transform: translateX(-3px);
     }
+}
 
+&--next{
+    transition: transform .2s linear;
+
+    &:hover{
+        transform: translateX(3px);
+    }
+}
+
+}
+
+.popup_content{
+    padding: 5rem 1rem;
+}
+.popup_title{
+    
+    margin-bottom: 3.6rem;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+    text-align: center;
 
 }
