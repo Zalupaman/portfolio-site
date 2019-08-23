@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.footer{
+    height: 67px;
+    width: 100%;
+
+    background-color: @black;
+
+    padding: 1.4rem 0;
+    margin-top: 156px;
+    
+}
+
+.footer_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.footer_credits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_copyright{
+    color:@gray;
+    font-size: .94rem;
+    border-right: 1px solid fade(#6A696B, 35%);
+    padding-right: 11.5px;
+    p{
+        align-items: center;
+    }
+    
+}
+
+.footer_icons{
+    font-size:   1.5rem;
+    margin-left: 1.2rem;
+}
+
+.footer_link{
+    color: @gray;
+    margin-left: 2rem;
+    position: relative;
+    font-size: 0.93rem;
+    
+    font-weight: 700;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    
+    &:after{
+        content: "";
+        width: 0;
+        height: 0.133rem;
+        background-color:@gray;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        transition: width .2s linear;
+    }
+    
+    &:hover:not(.footer_link--btn){
+
+        &:after{
+            width: 100%
+        }
+    }
+
+    &--btn{
+        
+        padding: 0.66rem 2rem;
+        transition: border .4s  linear , border-radius .2s linear;
+       // Modificators
+        &:hover{
+            border: 2px solid @gray;
+        border-radius: 20px;
+            
+        }
+
+    }
+}

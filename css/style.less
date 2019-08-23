@@ -1,0 +1,50 @@
+// compress:true
+
+html {
+    font-size: 15px;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color:@black;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+/* Block */
+@import "blocks/header.less";
+@import "blocks/container.less";
+@import "blocks/user.less";
+@import "blocks/nav.less";
+@import "blocks/intro.less";
+@import "blocks/social.less";
+@import "blocks/btn.less";
+@import "blocks/works.less";
+@import "blocks/portfolio.less";
+@import "blocks/about.less";
+@import "blocks/reviews.less";
+@import "blocks/news.less";
+@import "blocks/articles.less";
+@import "blocks/footer.less";
+@import "blocks/popup.less";
+@import "blocks/popup-work.less";
+
+// Helpers
+@import "helpers";
+@import "icons";
