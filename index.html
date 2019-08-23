@@ -10,7 +10,31 @@
         rel="stylesheet">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/1dc9ce1e4c.js"></script>
-
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+    <script>
+        $(function(){
+                
+          $('#seeresum1').click(function(){
+            $('#resum').slideDown(); 
+          });
+          $('#close').click(function(){
+            $('#resum').slideUp(); 
+          });
+    
+        });
+        $(function(){
+                
+                $('#seeresum2').click(function(){
+                  $('#resum').slideDown(); 
+                });
+                $('#close').click(function(){
+                  $('#resum').slideUp(); 
+                });
+          
+              });
+        
+      </script>
+  
 </head>
 
 <body>
@@ -57,8 +81,8 @@
                         </a>
                     </div>
 
-                    <a href="#" class="btn">HIRE ME</a>
-                    <button href="#" class="btn">SEE MY RESUME</button>
+                    <button href="#" class="btn">HIRE ME</button>
+                    <button href="#" id="seeresum1" class="btn">SEE MY RESUME</button>
 
                 </div>
                 <!--Intro content end-->
@@ -156,7 +180,7 @@
             </div>
             <!--Portfolio end-->
             <div class="text-center">
-                <a href="#" class="btn btn--sm">LOAD MORE WORK</a>
+                <button href="#" class="btn btn--sm">LOAD MORE WORK</button>
             </div>
         </div>
         <!--container end-->
@@ -192,8 +216,8 @@
                             nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit
                             cursus nunc,</p>
                     </div>
-                    <a href="#" class="btn">Hire me</a>
-                    <a href="#" class="btn">See my resume</a>
+                    <button href="#" class="btn" >Hire me</button>
+                    <button href="#" class="btn" id="seeresum2" >See my resume</button>
                 </div>
                 <!--Content end-->
 
@@ -370,7 +394,7 @@
 
     <!--popup-->
 
-    <div class="popup" style="display: none">
+    <div class="popup" style="display: none" id="work1">
         <div class="popup_dialog">
 
             <button class="popup_close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
@@ -416,16 +440,16 @@
 
     <!--Resume-->
 
-    <div class="popup" style="display: none">
+    <div class="popup" style="display: none" id="resum">
         <div class="popup_dialog">
 
-            <button class="popup_close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
+            <button class="popup_close" id="close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
             <div class="popup_content">
                 <h2 class="popup_title">Resume</h2>
 
                 <div class="text-center">
-                    <a href="#" class="btn btn--sm btn--thin">Download PDF</a>
-                    <a href="#" class="btn btn--sm btn--thin">Print</a>
+                    <button href="#" class="btn btn--sm btn--thin">Download PDF</button>
+                    <button href="#" class="btn btn--sm btn--thin">Print</button>
                 </div>
 
                 <div class="timeline">
@@ -524,12 +548,14 @@
                     
                 </div>
                 <!--Timeline end-->
-
-            </div>
+                <div class="text-center">
+                    <button href="#" class="btn " id="close1">Hire Me</button></div>
+                </div>
+            
         </div>
         <!--Popup dialog end-->
     </div>
-
+    
 </body>
 
 </html>
