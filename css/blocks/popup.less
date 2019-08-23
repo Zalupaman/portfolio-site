@@ -14,14 +14,74 @@
     top: 0;
     left: 0;
     z-index: 1000;
+
+    overflow: auto;
 }
 
 .popup_dialog{
+
+    padding: 1rem;
     width: 100%;
     max-width: 1200px;
     margin: auto;
 
-    padding: 2rem;
+    position: relative;
 
     background-color: #fff;
+}
+
+
+
+.popup_close{
+    position: absolute;
+
+    width: 34px;
+    height: 39px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+
+    top:.9rem;
+    right: 1rem;
+    z-index: 1;
+
+    transition: transform .2s linear;
+
+    &:hover{
+        transform: translateY(-3px);
+    }
+
+
+}
+
+.popup-work_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.8rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.popup-work_btn{
+    background: none;
+    border: 0;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.94rem;
+    color:@black;
+    text-transform: uppercase;
+   
+
+    &--previous{
+       
+    }
+
+
 }

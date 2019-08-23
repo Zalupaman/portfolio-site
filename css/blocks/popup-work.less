@@ -1,1 +1,80 @@
 // main: ../style.less
+
+.popup-work{
+    display: flex;
+}
+
+.popup-work_preview{
+    width: 65%;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.popup-work_photo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);  
+    
+}
+
+.popup-work_content{
+    width: 35%;
+    padding: 3.4rem 6.6rem 1.2rem  1.73rem;
+    position: relative;
+}
+
+.popup-work_header{
+    margin-bottom: 2.2rem;
+}
+
+.popup-work_title{
+    font-size: 2.12rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.popup-work_info{
+    display: flex;
+    align-items: center;
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: @gray;
+}
+
+.popup-work_info-divider{
+    margin: 0 1rem ;
+}
+
+.popup-work_client{
+
+    margin-bottom: 2.2rem;
+}
+
+.popup-work_client-title{
+    font-size: 1.03rem;
+    font-weight: 700;
+    color:@black;
+    margin-bottom: 0.2rem;
+}
+
+.popup-work_client-company{
+    font-weight: 0.94rem;
+    font-style: italic;
+    color: @gray;
+
+}
+
+.popup-work_text{
+    margin-bottom: 8.66rem;
+
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 400;
+    color: @gray;
+}
