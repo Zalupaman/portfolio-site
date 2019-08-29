@@ -12,29 +12,74 @@
     <script src="https://kit.fontawesome.com/1dc9ce1e4c.js"></script>
     <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
     <script>
-        $(function(){
-                
-          $('#seeresum1').click(function(){
-            $('#resum').slideDown(); 
-          });
-          $('#close').click(function(){
-            $('#resum').slideUp(); 
-          });
-    
+        $(function () {
+
+            $('#seeresum1').click(function () {
+                $('#resum').slideDown();
+            });
+            $('#close').click(function () {
+                $('#resum').slideUp();
+            });
+
         });
-        $(function(){
-                
-                $('#seeresum2').click(function(){
-                  $('#resum').slideDown(); 
-                });
-                $('#close').click(function(){
-                  $('#resum').slideUp(); 
-                });
-          
-              });
-        
-      </script>
-  
+        $(function () {
+
+            $('#seeresum2').click(function () {
+                $('#resum').slideDown();
+            });
+            $('#close').click(function () {
+                $('#resum').slideUp();
+            });
+
+        });
+
+        $(function () {
+
+            $('#hire-me1').click(function () {
+                $('#request').slideDown();
+            });
+            $('#close-request').click(function () {
+                $('#request').slideUp();
+            });
+
+        });
+        $(function () {
+
+            $('#hire-me2').click(function () {
+                $('#request').slideDown();
+            });
+            $('#close-request').click(function () {
+                $('#request').slideUp();
+            });
+
+        });
+
+        $(function () {
+
+            $('#hire-me3').click(function () {
+                $('#request').slideDown();
+            });
+            $('#close-request').click(function () {
+                $('#request').slideUp();
+            });
+
+        });
+
+        $(function () {
+
+            $('#hire-me4').click(function () {
+                $('#request').slideDown();
+            });
+            $('#close-request').click(function () {
+                $('#request').slideUp();
+            });
+
+        });
+
+
+    </script>
+
+
 </head>
 
 <body>
@@ -44,7 +89,7 @@
             <div class="header_inner">
                 <div class="user">
                     <div class="user_avatar">
-                        <img src="https://placehold.it/57/333" alt="avatar">
+                        <img src="https://placehold.it/57x57/333" alt="avatar">
                     </div>
 
                     <div class="user_content">
@@ -56,7 +101,7 @@
                     <a href="#" class="nav_link">work</a>
                     <a href="#" class="nav_link">about me</a>
                     <a href="#" class="nav_link">blog</a>
-                    <a href="#" class="nav_link nav_link--btn">hire me</a>
+                    <button id="hire-me1" class="nav_link nav_link--btn">hire me</button>
                 </nav>
             </div>
         </div>
@@ -81,7 +126,7 @@
                         </a>
                     </div>
 
-                    <button href="#" class="btn">HIRE ME</button>
+                    <button id="hire-me2" class="btn">HIRE ME</button>
                     <button href="#" id="seeresum1" class="btn">SEE MY RESUME</button>
 
                 </div>
@@ -105,7 +150,9 @@
             </div>
 
             <div class="portfolio">
-                <div class="portfolio_col">
+
+                <div class="portfolio_col" id="work1">
+
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
@@ -115,7 +162,9 @@
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
                 <div class="portfolio_col">
                     <div class="portfolio_item">
@@ -182,6 +231,7 @@
             <div class="text-center">
                 <button href="#" class="btn btn--sm">LOAD MORE WORK</button>
             </div>
+            </button>
         </div>
         <!--container end-->
     </div>
@@ -216,8 +266,8 @@
                             nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit
                             cursus nunc,</p>
                     </div>
-                    <button href="#" class="btn" >Hire me</button>
-                    <button href="#" class="btn" id="seeresum2" >See my resume</button>
+                    <button id="hire-me3" class="btn">Hire me</button>
+                    <button href="#" class="btn" id="seeresum2">See my resume</button>
                 </div>
                 <!--Content end-->
 
@@ -371,7 +421,7 @@
                 <div class="footer_credits">
                     <div class="footer_copyright">© 2019 </div>
                     <div class="footer_icons">
-                        <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-envelope fas--footer"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://vk.com/sanamerk" target="_blank"><i class="fab fa-vk"></i></a>
                     </div>
@@ -381,7 +431,7 @@
                     <a href="#" class="footer_link">work</a>
                     <a href="#" class="footer_link">about me</a>
                     <a href="#" class="footer_link">blog</a>
-                    <a href="#" class="footer_link footer_link--btn">hire me</a>
+                    <button id="hire-me4" class="footer_link footer_link--btn">hire me</button>
                 </nav>
                 <!--nav end-->
 
@@ -394,7 +444,7 @@
 
     <!--popup-->
 
-    <div class="popup" style="display: none" id="work1">
+    <div class="popup" style="display: none">
         <div class="popup_dialog">
 
             <button class="popup_close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
@@ -443,9 +493,10 @@
     <div class="popup" style="display: none" id="resum">
         <div class="popup_dialog">
 
-            <button class="popup_close" id="close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
+            <button class="popup_close" id="close" type="button"><i
+                    class="fas fa-times-circle popup-work_btn"></i></button>
             <div class="popup_content">
-                <h2 class="popup_title">Resume</h2>
+                <h2 class="popup_title text-center">Resume</h2>
 
                 <div class="text-center">
                     <button href="#" class="btn btn--sm btn--thin">Download PDF</button>
@@ -464,21 +515,21 @@
                                 nesciunt ex eveniet eius iste quasi, rerum ad possimus laudantium repellat voluptas aut
                                 doloribus consectetur esse molestiae?
                             </div>
-`                           
+                            `
                         </div>
                         <!--Timeline item end-->
                         <div class="timeline_item">
-                                <div class="timeline_date">2019</div>
-                                <h5 class="timeline_subtitle">Freelancer</h5>
-                                <div class="timeline_position">Junior web dev</div>
-                                <div class="timeline_text">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nisi aliquid sequi at
-                                    nesciunt ex eveniet eius iste quasi, rerum ad possimus laudantium repellat voluptas aut
-                                    doloribus consectetur esse molestiae?
-                                </div>
-    `                           
+                            <div class="timeline_date">2019</div>
+                            <h5 class="timeline_subtitle">Freelancer</h5>
+                            <div class="timeline_position">Junior web dev</div>
+                            <div class="timeline_text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nisi aliquid sequi at
+                                nesciunt ex eveniet eius iste quasi, rerum ad possimus laudantium repellat voluptas aut
+                                doloribus consectetur esse molestiae?
                             </div>
-                            <!--Timeline item end-->
+                            `
+                        </div>
+                        <!--Timeline item end-->
                     </div>
                     <!--Timeline col left end-->
                     <!--Timeline cil right-->
@@ -504,9 +555,9 @@
                                     </div>
                                 </div>
                             </div>
-                        
-                        <!--Progress bar 1 end-->
-                        
+
+                            <!--Progress bar 1 end-->
+
                             <div class="progress-bar_item">
                                 <div class="progress-bar_left">
                                     <div class="progress-bar_title">HTML</div>
@@ -519,9 +570,9 @@
                                     </div>
                                 </div>
                             </div>
-                        
-                        <!--Progress bar 2 end-->
-                        
+
+                            <!--Progress bar 2 end-->
+
                             <div class="progress-bar_item">
                                 <div class="progress-bar_left">
                                     <div class="progress-bar_title">CSS</div>
@@ -535,27 +586,123 @@
                                 </div>
                             </div>
                         </div>
-                        
-                            <h4 class="timeline_title">Awards</h4>
-                            <div class="timeline_item">
-                                    <div class="timeline_date">2019-<b>Present</b></div>
-                                    <h5 class="timeline_subtitle">Web developer</h5>
-                                    <div class="timeline_position">ITHUB</div>
-                                </div>
+
+                        <h4 class="timeline_title">Awards</h4>
+                        <div class="timeline_item">
+                            <div class="timeline_date">2019-<b>Present</b></div>
+                            <h5 class="timeline_subtitle">Web developer</h5>
+                            <div class="timeline_position">ITHUB</div>
+                        </div>
 
                     </div>
                     <!--Timeline col right end-->
-                    
+
                 </div>
                 <!--Timeline end-->
                 <div class="text-center">
                     <button href="#" class="btn " id="close1">Hire Me</button></div>
-                </div>
-            
+            </div>
+
         </div>
         <!--Popup dialog end-->
     </div>
-    
+    <!--popup-->
+
+    <div class="popup" style="display: none" id="work1">
+        <div class="popup_dialog">
+
+            <button class="popup_close" type="button"><i class="fas fa-times-circle popup-work_btn"></i></button>
+            <div class="popup-work">
+                <div class="popup-work_preview">
+                    <img class="popup-work_photo" src="https://placehold.it/790x780" alt="">
+                </div>
+                <div class="popup-work_content">
+                    <div class="popup-work_header">
+                        <h3 class="popup-work_title">Project title</h3>
+                        <div class="popup-work_info">
+                            Category <div class="popup-work_info-divider">|</div> 2019
+                        </div>
+                    </div>
+                    <div class="popup-work_client">
+                        <div class="popup-work_client-title">Client:</div>
+                        <div class="popup-work_client-company">Creative agency</div>
+                    </div>
+
+                    <div class="popup-work_text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident quibusdam itaque
+                            debitis impedit facere obcaecati, enim pariatur ipsam nihil id recusandae earum vitae
+                            repudiandae eum. Reiciendis ipsam earum dolorem!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident quibusdam itaque
+                            debitis impedit facere obcaecati, enim pariatur ipsam nihil id recusandae earum vitae
+                            repudiandae eum. Reiciendis ipsam earum dolorem!</p>
+                    </div>
+                    <div class="popup-work_footer">
+                        <button class="popup-work_btn popup-work_btn--prev"><i
+                                class="fas fa-caret-left"></i></i>Previous</button>
+                        <button class="popup-work_btn popup-work_btn--next">Next<i
+                                class="fas fa-caret-right"></i></i></button>
+                    </div>
+                </div>
+                <!--Popup content end-->
+            </div>
+            <!--Popup work end-->
+
+        </div>
+        <!--Popup dialog end-->
+    </div>
+    <!--Popup end-->
+
+    <div class="popup" style="display: none" id="request">
+        <div class="popup_dialog popup_dialog--sm">
+
+            <button class="popup_close" id="close-request" type="button">
+                <i class="fas fa-times-circle popup-work_btn"></i>
+            </button>
+
+            <div class="contact">
+                <div class="contact_left">
+                    <h2 class="popup_title popup_title--m0">LET'S TALK!</h2>
+                    <h4 class="popup_subtitle">CALL ME OR SEND ME A REQUEST</h4>
+
+                    <ul class="contact_info">
+                        <li class="contact_info-item ">
+                            <i class="fas fa-phone-square-alt fas--icon"></i>
+                            +7(985)-835-75-25
+                        </li>
+                        <li class="contact_info-item ">
+                            <i class="fas fa-envelope fas--icon"></i>
+                            merkishev02@mail.ru
+                        </li>
+                    </ul>
+
+                    <form class="form" action="/" method="post">
+                        <div class="form_group">
+                            <label class="form_label" for="input-email">Adress e-mail</label>
+                            <input class="form_input" type="text" placeholder="Adress e-mail" id="input-email">
+                        </div>
+                        <div class="form_group">
+                            <label class="form_label" for="text-request">Request</label>
+                            <textarea class="form_textarea" name="text-request" id="text-request"
+                                placeholder="Type your request..."></textarea>
+                        </div>
+                    </form>
+                    <div class="text-right">
+                        <button class="btn">SEND</button>
+                    </div>
+
+                </div>
+                <!--contact left-->
+
+            </div>
+            <!--Contact-->
+
+
+
+        </div>
+        <!--Popup dialog end-->
+    </div>
+    <!--popup-->
+
 </body>
 
 </html>

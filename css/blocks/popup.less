@@ -3,8 +3,8 @@
 .popup{
     
     display: flex;
-
-    padding: 2rem;
+padding: 2rem;
+    
 
     width: 100%;
     height: 100%;
@@ -17,14 +17,19 @@
     z-index: 1000;
 
     overflow: auto;
+
+   
 }
 
 .popup_dialog{
     
-    padding: 1rem;
+    
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    &--sm{
+        max-width: 900px;
+    }
 
     position: relative;
 
@@ -111,6 +116,10 @@
     text-transform: uppercase;
     color: @black;
     font-weight: 700;
-    text-align: center;
+
+    &--m0{
+        margin-bottom: 0;
+    }
+    
 
 }
