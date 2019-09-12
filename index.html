@@ -11,7 +11,7 @@
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/1dc9ce1e4c.js"></script>
     <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
-    <script src="js/jquery.js"></script>
+    
 
 
 </head>
@@ -77,20 +77,20 @@
     <div class="works">
         <div class="container">
             <div class="works_nav">
-                <a class="works_nav_links" href="#">All</a>
-                <a class="works_nav_links" href="#">App</a>
-                <a class="works_nav_links" href="#">Websites</a>
-                <a class="works_nav_links" href="#">Interaction</a>
+                <a class="works_nav_links" data-filter="all"href="#">All</a>
+                <a class="works_nav_links" data-filter="app" href="#">App</a>
+                <a class="works_nav_links" data-filter="website"href="#">Websites</a>
+                <a class="works_nav_links" data-filter="interaction" href="#">Interaction</a>
             </div>
 
             <div class="portfolio">
 
-                <div class="portfolio_col" id="work1">
+                <div class="portfolio_col" data-cat="website" >
 
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category:website</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -100,11 +100,11 @@
                     </div>
 
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="interaction">
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category:interaction</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -112,11 +112,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="app">
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category:app</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -124,11 +124,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="website">
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category:website</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -136,11 +136,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col"data-cat="interaction">
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category:interaction</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -148,11 +148,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio_col">
+                <div class="portfolio_col" data-cat="app">
                     <div class="portfolio_item">
                         <img class="portfolio_image" src="https://placehold.it/370x299" alt="">
                         <div class="portfolio_item-content">
-                            <div class="portfolio_cat">Category</div>
+                            <div class="portfolio_cat">Category :app</div>
                             <div class="portfolio_title">
                                 Project title
                                 <time class="portfolio_date" datetime="2019-11-23 19:00">2019</time>
@@ -636,7 +636,7 @@
         <!--Popup dialog end-->
     </div>
     <!--popup-->
-
+        <script src="js/jquery.js"></script>
 </body>
 
 </html>
